@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'praveenmasthan/finance-service-portal'
+        IMAGE_NAME = 'kizito120/finance-service-portal'
     }
 
     stages {
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh '''
                     python3 -m venv .venv
-                    .venv/bin/python -m pip install -r requirements.txt
+                    .venv/bin/python -m pip install -r requirement.txt
                 '''
             }
         }
